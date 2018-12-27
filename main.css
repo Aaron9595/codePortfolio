@@ -33,10 +33,13 @@ nav li {
     padding: 10px;
     background-color: #a9b0b3;
     border-radius: 25px;
+    transition: .3s;
 }
 
 nav li:hover {
     background-color: #20293f;
+    transform: scale(1.5);
+    transition: .3s;
 }
 
 nav li a {
@@ -44,7 +47,18 @@ nav li a {
     text-decoration: none;
 }
 
+.active {
+    transform: scale(1.5);
+    background-color: #20293f;
+}
+
+nav li:active {
+    transform: scale(1.5);
+    background-color: #20293f;
+
+}
+
 #welcome-section {
-    background-image: url()
+    
 }
 
