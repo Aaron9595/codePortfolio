@@ -11,6 +11,8 @@ html, body {
     padding: 0;
 }
 
+/* --- NAV BAR --- */
+
 #navbar {
     left: 0;
 }
@@ -23,7 +25,7 @@ nav ul {
     list-style-type: none;
     width: 10%;
     padding: 15px;
-    margin-top: 200px;
+    margin-top: 15%;
     margin-left: 30px;
 }
 
@@ -47,7 +49,8 @@ nav li a {
     text-decoration: none;
 }
 
-.active {
+/* gives the current page the larger button to show it is where you are now */
+.active { 
     transform: scale(1.5);
     background-color: #20293f;
 }
@@ -58,7 +61,48 @@ nav li:active {
 
 }
 
+/* --- WELCOME SECTION --- */
+
 #welcome-section {
-    
+    background-image: url(imgs/logo1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 55vh;
+    padding-top: 45vh;
+    margin-right: 5%;
+    margin-left: 275px;
+    text-align: left;
 }
+
+#welcome-section h1 {
+    color: #303739;
+    font-size: 2.1rem;
+}
+
+#welcome-section h2 {
+    color: #303739;
+    font-size: 1.75rem;
+    margin-left: 1.8px;
+}
+
+/* --- ABOUT SECTION --- */
+
+#about-section {
+    min-height: 55vh;
+    padding-top: 45vh;
+    margin-left: 275px;
+    margin-bottom: 20px;
+}
+
+#about-section h1 {
+    color: #303739;
+    padding-bottom: 20px;
+}
+
+#about-section p {
+    color: #303739;
+    font-size: 1.2rem;
+    margin-right: 10%;
+}
+
 
