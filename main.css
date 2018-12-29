@@ -105,4 +105,52 @@ nav li:active {
     margin-right: 10%;
 }
 
+/* --- PROJECTS --- */
+
+#projects {
+    min-height: 55vh;
+    padding-top: 45vh;
+    margin-left: 275px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+}
+
+#projects h1 {
+    font-size: 2.1rem;
+    text-align: center;
+    color: #303739;
+}
+
+#projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+#projects-section a {
+    text-decoration: none;
+    color: #303739;
+}
+
+#projects-section a:hover {
+    text-decoration: underline;
+}
+
+.project-photo {
+    height: 200px;
+    width: 200px;
+    margin-bottom: -4px;
+}
+
+.project-tile {
+    border: solid 4px #20293f;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    border-top: solid 3px #20293f;
+}
+
 
