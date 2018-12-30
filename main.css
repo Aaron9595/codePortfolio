@@ -154,3 +154,60 @@ nav li:active {
 }
 
 
+/* --- CONTACT FORM --- */
+
+form#contact-form {
+    min-height: 55vh;
+    padding-top: 45vh;
+    margin-left: 275px;
+    margin-bottom: 80px;
+    margin-right: 60%;
+}
+
+form#contact-form fieldset {
+    border-radius: .5rem;
+    padding-right: 20px;
+}
+
+form#contact-form legend {
+    font-weight: 700;
+    margin-left: 1rem;
+    color: #303739;
+    font-size: 1.1rem;
+}
+
+form#contact-form span {
+    display: block;
+    padding: .8rem 0 0 .3rem;
+    margin-left: 1rem;
+}
+
+form#contact-form .contact-info {
+    color: #303739;
+    width: 20rem;
+    border-radius: .6rem;
+    border: solid 1px #20293f;
+    padding: .4rem;
+    margin-left: 1rem;
+}
+
+form#contact-form .questions {
+    margin-left: 1rem;
+    margin-bottom: .8rem;
+    border-radius: .6rem;
+}
+
+form#contact-form .button {
+    width: 20rem;
+    padding: .8rem;
+    margin-top: 15px;
+    margin-left: 28px;
+    background-color: #20293f;
+    border: solid 1px #000000;
+    border-radius: .6rem;
+    color: #ffffff;
+}
+
+form#contact-form .button:hover {
+    cursor: pointer;
+}
