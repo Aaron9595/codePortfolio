@@ -55,11 +55,10 @@ nav li a {
     background-color: #20293f;
 }
 
-nav li:active {
+/* nav li:active {
     transform: scale(1.5);
     background-color: #20293f;
-
-}
+} */
 
 /* --- WELCOME SECTION --- */
 
