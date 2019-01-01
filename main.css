@@ -25,34 +25,33 @@ nav ul {
     list-style-type: none;
     width: 10%;
     padding: 15px;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 30px;
 }
 
-nav li {
+nav li a {
     text-align: center;
     margin: 30px;
     padding: 10px;
     background-color: #a9b0b3;
     border-radius: 25px;
     transition: .3s;
+    color: white;
+    text-decoration: none;
+    display: block;
 }
 
-nav li:hover {
+nav li a:hover {
     background-color: #20293f;
     transform: scale(1.5);
     transition: .3s;
 }
 
-nav li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
 /* gives the current page the larger button to show it is where you are now */
-.active { 
+li .active { 
     transform: scale(1.5);
     background-color: #20293f;
+    transition: .3s;
 }
 
 /* nav li:active {
@@ -155,10 +154,14 @@ nav li a {
 
 /* --- CONTACT FORM --- */
 
+#contact {
+    margin-top: 10px;
+}
+
 form#contact-form {
     min-height: 55vh;
     padding-top: 45vh;
-    margin-left: 275px;
+    margin-left: 40%;
     margin-bottom: 80px;
     margin-right: 60%;
 }

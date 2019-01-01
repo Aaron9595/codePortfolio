@@ -18,29 +18,32 @@
 
   <nav>
     <ul id="navbar">
+      <li><a class="active" href="#welcome">Welcome</a></li>
       <li><a href="#about-section">About</a></li>
-      <li><a href="#projects-section">Projects</a></li>
-      <li><a href="#contact-form">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
 <!-- * WELCOME SECTION * -->
-
-  <div id="welcome-section">
-    <h1>Welcome to Aaron's Portfolio</h1>
-    <h2>Web Development Portfolio</h2>
-  </div>
+<div id="content">
+  <section id="welcome">
+    <div id="welcome-section">
+      <h1>Welcome to Aaron's Portfolio</h1>
+      <h2>Web Development Portfolio</h2>
+    </div>
+  </section>
 
 <!-- * ABOUT SECTION * -->
 
-  <div id="about-section">
+  <section id="about-section">
     <h1>About Aaron...</h1>
     <p>Born and raised in Provo, UT I am a self-taught photographer. It first started with my love for the outdoors and getting out to explore the Rocky Mountains that surround my home town. I wanted to share all of these amazing places I've reached on these hikes and climbs. I got my first camera for the purpose of capturing those moments forever and to share them for everyone to enjoy with me.</p>
-  </div>
+  </section>
 
 <!-- * PROJECTS SECTION * -->
 
-  <div id="projects">
+  <section id="projects">
       <h1>These are some of my projects...</h1>
       <div id="projects-section">
           <a href="https://www.aaronnphotography.com" class="project-tile" target="_blank">
@@ -75,12 +78,12 @@
               <div class="project-title">Photography Site</div>
           </a>
       </div>
-    </div>
+    </section>
 
   <!-- * CONTACT SECTION * -->
-
-  <form id="contact-form">
-      <fieldset >
+  <section id="contact">
+    <form id="contact-form">
+        <fieldset>
 
           <legend>Contact Form</legend>
           <label><span>Name:</span><input type="text" name="name" placeholder="Full Name" required class="contact-info"></label>
@@ -90,12 +93,13 @@
           <label><span>Questions:</span><textarea placeholder=" Any questions..." class="questions" name="questionbox" rows="5" cols="53" required></textarea></label>
 
       
-      </fieldset>
+        </fieldset>
 
-      <input type="submit" name="submit" value="Contact Me" class="button">
+        <input type="submit" name="submit" value="Contact Me" class="button">
 
-  </form>
-
+    </form>
+  </section>
+</div>
 </body>
 
 </html>
