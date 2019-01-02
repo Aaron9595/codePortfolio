@@ -119,7 +119,7 @@ li .active {
     color: #303739;
 }
 
-#projects-section {
+.projects-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -127,12 +127,12 @@ li .active {
     padding-bottom: 45px;
 }
 
-#projects-section a {
+.projects-section a {
     text-decoration: none;
     color: #303739;
 }
 
-#projects-section a:hover {
+.projects-section a:hover {
     text-decoration: underline;
 }
 
