@@ -149,6 +149,7 @@ li .active {
 .project-title {
     font-size: 1.4rem;
     border-top: solid 3px #20293f;
+    text-align: center;
 }
 
 
