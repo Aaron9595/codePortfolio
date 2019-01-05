@@ -19,13 +19,13 @@ $(window).on('scroll', function() {
     })
 })
 
-nav.find('a').on('click', function () {
-    var $el = $(this)
-      , id = $el.attr('href');
+// nav.find('a').on('click', function () {
+//     var $el = $(this)
+//       , id = $el.attr('href');
    
-    $('html, body').animate({
-      scrollTop: $(id).offset().top - nav_height
-    }, 500);
+//     $('html, body').animate({
+//       scrollTop: $(id).offset().top - nav_height
+//     }, 500);
    
-    return false;
-  });
+//     return false;
+//   });
