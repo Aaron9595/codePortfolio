@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #ebeced;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'lora';
     scroll-behavior: smooth;
 }
 
@@ -23,9 +23,9 @@ nav ul {
     flex-direction: column;
     justify-content: flex-end;
     list-style-type: none;
-    width: 10%;
+    width: 150px;
     padding: 15px;
-    margin-top: 15%;
+    margin-top: 225px;
     margin-left: 30px;
 }
 
@@ -62,38 +62,94 @@ li .active {
 /* --- WELCOME SECTION --- */
 
 #welcome-section {
-    background-image: url(imgs/logo1.png);
+    background-image: url(imgs/home3.jpg);
     background-repeat: no-repeat;
-    background-position: right;
-    min-height: 55vh;
-    padding-top: 45vh;
-    margin-right: 5%;
-    margin-left: 275px;
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    padding-top: 40vh;
     text-align: left;
 }
 
 #welcome-section h1 {
     color: #303739;
-    font-size: 2.1rem;
+    font-size: 3.5rem;
+    margin-left: 50px;
+    margin-top: -250px;
 }
 
 #welcome-section h2 {
     color: #303739;
-    font-size: 1.75rem;
-    margin-left: 1.8px;
+    font-size: 2rem;
+    margin-left: 51.8px;
 }
+
+#arrow {
+    position: static;
+    height: 60px;
+    width: 60px;
+    margin-left: 50%;
+    margin-top: 68vh;
+    opacity: 0.4;
+    transition: .3s;
+}
+
+#arrow:hover {
+    transform: scale(1.5);
+    transition: .3s;
+    cursor: pointer;
+    opacity: 0.6;
+    background-color: #20293f;
+    border-radius: 100%;
+}
+
+/* --- SLIDE ANIMATION --- */
+
+@-webkit-keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+  }
+
+  
 
 /* --- ABOUT SECTION --- */
 
 #about-section {
-    min-height: 55vh;
-    padding-top: 45vh;
+    min-height: 60vh;
+    padding-top: 40vh;
     margin-left: 275px;
     /* margin-bottom: 20px; */
 }
 
 #about-section h1 {
-    padding-top: 60px;
+    padding-top: 0px;
     color: #303739;
     padding-bottom: 20px;
     font-size: 1.75rem;
@@ -101,13 +157,13 @@ li .active {
 
 #about-section p {
     color: #303739;
-    font-size: 1.2rem;
-    margin-right: 10%;
+    font-size: 1rem;
+    margin-right: 22%;
 }
 
 #about-photo {
-    background-image: url('imgs/about.jpg');
-    background-position: center;
+    background-image: url('imgs/me.jpg');
+    background-position: center top;
     background-size: cover;
     border-radius: 50%;
     clear: both;
@@ -120,15 +176,15 @@ li .active {
 /* --- PROJECTS --- */
 
 #projects {
-    min-height: 55vh;
-    padding-top: 45vh;
+    min-height: 60vh;
+    padding-top: 40vh;
     margin-left: 275px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-right: 10%;
 }
 
 #projects h1 {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     text-align: center;
     color: #303739;
 }
@@ -150,21 +206,46 @@ li .active {
     text-decoration: underline;
 }
 
+.container {
+    position: relative;
+    width: 260px;
+    max-width: 300px;
+}
+
 .project-photo {
-    height: 200px;
-    width: 200px;
-    margin-bottom: -4px;
+    height: 320px;
+    width: 300px;
+    display: block;
 }
 
-.project-tile {
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(32, 41, 63, 0.5);
+    color: #fff;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 1.7rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .project-overlay{
+    opacity: 1;
+}
+
+/* .project-tile {
     border: solid 4px #20293f;
-}
+} */
 
-.project-title {
+/* .project-title {
     font-size: 1.4rem;
     border-top: solid 3px #20293f;
     text-align: center;
-}
+} */
 
 
 /* --- CONTACT FORM --- */
@@ -236,28 +317,34 @@ form#contact-form .button:hover {
 #footer {
     display: flex;
     justify-content: center;
-    background: #ebeced;
-    padding-bottom: 10px;
-    margin-left: 150px;
+    background: #dbdcdd;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .social {
     background: #a9b0b3;
     text-decoration: none;
     color: #fff;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin: 50px;
-    line-height: 100px;
-    border: solid 2px #333;
+    margin: 0px 25px 0px 25px;
+    line-height: 80px;
     text-align: center;
     transition: .3s;
+    margin-bottom: 0px;
+}
+
+.footer-button {
+    height: 80px;
+    width: 80px;
 }
 
 .social:hover {
     border-color: #000000;
     background-color: #20293f;
     transform: scale(1.2);
+    transform: rotate(45deg);
     transition: .3s;
 }

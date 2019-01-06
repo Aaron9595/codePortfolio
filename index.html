@@ -5,8 +5,7 @@
   <title>Portfolio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel:400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
   <script type="module" src="main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -29,8 +28,11 @@
   <div id="content">
     <section id="welcome">
       <div id="welcome-section">
-        <h1>Welcome to Aaron's Portfolio</h1>
-        <h2>Web Development Portfolio</h2>
+        <div class="slideInLeft">
+          <h1>Hi, I'm Aaron</h1>
+          <h2>Welcome To My Web Development Portfolio</h2>
+        </div>
+        <img id="arrow" src="imgs/arrow.png" alt="arrow">
       </div>
     </section>
 
@@ -40,48 +42,43 @@
       <section id="about-photo">
       </section>
       <div>
-        <h1>About Aaron...</h1>
-        <p>Born and raised in Provo, UT I was first introduced to coding in late 2017. I just started by deciding to make a website for my photography that I do as a hobby and I enjoyed working on it so much I decided I wanted to make a career out of web development. I decided to enroll in a BS program for web development at UVU. I am currently working on personal and school related projects but am always looking for new opportunities for experience and to learn everything I can about programming
-          </p>
+        <h1>A little more about me...</h1>
+        <p>It started out as a passion for photography, oddly enough. I have been searching for a way to showcase my photography work to my followers on line, but the online website templates didn’t fit my style. I wanted something personal, something that was more.. Me. It dawned on me that I could just make my own. From scratch. Shouldn’t be too hard, right?</p> 
+        <br>
+        <p>I couldn’t have been more wrong.</p> 
+        <br>
+        <p>I shadowed with my brother in law who is an experienced Web Developer and he showed me basic code to get me started. Eventually, I was starting to invest more and more time into it and I was getting lost in the limitless opportunities to learn more. A year later, I was finally ready to build my first ever website, my Photography Page.</p>
+        <br>
+        <p>And that’s where it all began. From that point on, I knew Web Development is what I wanted to do.</p>
       </div>
     </section>
 
 <!-- * PROJECTS SECTION * -->
 
     <section id="projects">
-        <h1>These are some of my projects...</h1>
+        <h1>Check out my work</h1>
         <div class="projects-section">
+
+          <div class="container">
             <a href="https://www.aaronnphotography.com" class="project-tile" target="_blank">
                 <img class="project-photo" src="imgs/about.jpg" alt="project">
-                <div class="project-title">Photography Site</div>
+                <div class="project-overlay">Photography Site</div>
             </a>
+          </div>
           
+          <div class="container">
             <a href="https://www.aaronnphotography.com/dgm2120" class="project-tile" target="_blank">
                 <img class="project-photo" src="imgs/logo2.png" alt="project">
-                <div class="project-title">Practice Site #1</div>
+                <div class="project-overlay">Practice Site #1</div>
             </a>
+          </div>
 
+          <div class="container">
             <a href="https://competent-galileo-082123.netlify.com/" class="project-tile" target="_blank">
                 <img class="project-photo" src="imgs/logo2.png" alt="project">
-                <div class="project-title">Practice Site #2</div>
+                <div class="project-overlay">Practice Site #2</div>
             </a>
-        </div>
-
-        <div class="projects-section">
-            <a href="https://competent-galileo-082123.netlify.com/poke.html" class="project-tile" target="_blank">
-                <img class="project-photo" src="imgs/cardback2.png" alt="project">
-                <div class="project-title">Pokemon Cards</div>
-            </a>
-  
-            <a href="https://competent-galileo-082123.netlify.com/starwars.html" class="project-tile" target="_blank">
-                <img class="project-photo" src="imgs/starwars2.png" alt="project">
-                <div class="project-title">Star Wars</div>
-            </a>
-  
-            <a href="https://www.github.com/Aaron9595" class="project-tile" target="_blank">
-                <img class="project-photo" src="imgs/github.png" alt="project">
-                <div class="project-title">Github</div>
-            </a>
+          </div>
         </div>
       </section>
 
@@ -108,11 +105,17 @@
   <!-- * FOOTER * -->
 
   <div id="footer">
-    <a class="social" href="https://github.com/Aaron9595" target="_blank">Github</a>
+    <a class="social" href="https://github.com/Aaron9595" target="_blank">
+    <img class="footer-button" src="imgs/github3.png" alt="github">
+    </a>
 
-    <a class="social" href="https://www.instagram.com/aaronnphoto/" target="_blank">Instagram</a>
+    <a class="social" href="https://www.instagram.com/aaronnphoto/" target="_blank">
+    <img class="footer-button" src="imgs/insta2.png" alt="github">
+    </a>
 
-    <a class="social" href="https://www.linkedin.com/in/aaron-nelson-2b062987/" target="_blank">Linkedin</a>
+    <a class="social" href="https://www.linkedin.com/in/aaron-nelson-2b062987/" target="_blank">
+    <img class="footer-button" src="imgs/linkedin2.png" alt="github">
+    </a>
   </div>
 
   </div>
